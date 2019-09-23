@@ -18,8 +18,8 @@ def turn(board)
     counter = 0
     input = gets.strip      #gets the user input
     index = input_to_index(input)
-    if valid_move?(board, index) == false || position_taken?(board, index) == false
-      binding.pry
+    if valid_move?(board, index) == false 
+    #  binding.pry
       puts "Please enter 1-9:"
       counter += 1
     else move(board, index, value= "X")
