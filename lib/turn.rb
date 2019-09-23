@@ -22,7 +22,7 @@ def turn(board)
     #  binding.pry
       puts "Please enter 1-9:"
       turn(board)
-    else 
+    else
       move(board, index, value= "X")
       display_board(board)
     end
