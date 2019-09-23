@@ -15,12 +15,10 @@ end
 
 def turn(board)
     puts "Please enter 1-9:" # asks for user input
-    counter = 0
     input = gets.strip      #gets the user input
     index = input_to_index(input)
     if valid_move?(board, index) == false
     #  binding.pry
-      puts "Please enter 1-9:"
       turn(board)
     else
       move(board, index, value= "X")
