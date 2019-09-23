@@ -20,8 +20,8 @@ def turn(board)
     index = input_to_index(input)
     if valid_move?(board, index) == false || position_taken?(board, index) == false
       binding.pry
-      counter += 1
       puts "Please enter 1-9:"
+      counter += 1
     else move(board, index, value= "X")
       display_board(board)
     end
