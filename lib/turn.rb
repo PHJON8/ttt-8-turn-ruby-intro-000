@@ -21,7 +21,7 @@ def turn(board)
     if valid_move?(board, index) == false
     #  binding.pry
       puts "Please enter 1-9:"
-      counter += 1
+      turn(board)
     else 
       move(board, index, value= "X")
       display_board(board)
