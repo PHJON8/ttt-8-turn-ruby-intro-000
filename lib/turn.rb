@@ -30,7 +30,7 @@ end
 def valid_move?(board, index)
   if index.between?(0,8) && position_taken?(board, index) == false
   return true
-else index.between?(9,100)
+else 
   return false
   end
 end
