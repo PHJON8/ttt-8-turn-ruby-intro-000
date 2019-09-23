@@ -38,7 +38,7 @@ end
 def position_taken?(board, index) #method name and parameters
   if board[index] == " " || board[index] ==  ""  # to return true for " ", ""
     return false
-  else board[index] == "X" || board[index] == "O"  #return false for "X" & "O"
+  elsif board[index] == "X" || board[index] == "O"  #return false for "X" & "O"
     return true
    end
  end
